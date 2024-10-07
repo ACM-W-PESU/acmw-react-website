@@ -1,10 +1,12 @@
 import React from 'react';
+import MissionVisionSection from './missionvisionobj';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to ACMW Website</h1>
+      <MissionVisionSection />
     </div>
+   
   );
 }
 

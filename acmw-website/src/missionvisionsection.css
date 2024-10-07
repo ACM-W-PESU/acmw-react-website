@@ -1,0 +1,92 @@
+/* MissionVisionSection.css */
+.mission-vision-section {
+    width: 100%;
+    min-height: 500px; /* Increased height to accommodate padding */
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .circuit-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+  }
+  
+  .circuit-line {
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background-color: #e2e8f0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px; /* Increased top padding to move content down */
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    padding: 24px;
+  }
+  
+  .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding-top: 100px; /* Slightly less padding on mobile */
+    }
+    
+    .card {
+      padding: 16px;
+    }
+    
+    .card-container {
+      gap: 32px;
+    }
+  }
+  
+  /* Optional hover effects */
+  .card:hover .icon-wrapper {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-wrapper {
+    transition: transform 0.3s ease;
+  }
