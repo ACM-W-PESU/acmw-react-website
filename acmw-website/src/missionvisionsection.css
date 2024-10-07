@@ -1,7 +1,6 @@
-/* MissionVisionSection.css */
 .mission-vision-section {
     width: 100%;
-    min-height: 500px; /* Increased height to accommodate padding */
+    min-height: 500px; 
     background: #ffffff;
     position: relative;
     overflow: hidden;
@@ -25,7 +24,7 @@
     z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 150px; /* Increased top padding to move content down */
+    padding-top: 150px; 
     padding-bottom: 64px;
     padding-left: 16px;
     padding-right: 16px;
@@ -66,10 +65,9 @@
     margin: 0;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .container {
-      padding-top: 100px; /* Slightly less padding on mobile */
+      padding-top: 100px; 
     }
     
     .card {
@@ -80,13 +78,10 @@
       gap: 32px;
     }
   }
-  
-  /* Optional hover effects */
   .card:hover .icon-wrapper {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
   }
-  
   .icon-wrapper {
     transition: transform 0.3s ease;
   }
