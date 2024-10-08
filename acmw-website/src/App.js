@@ -1,9 +1,9 @@
-import React from 'react';
-
+import React from "react";
+import About from "./components/about";
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to ACMW Website</h1>
+      <About />
     </div>
   );
 }
