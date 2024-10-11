@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/navbar';
+import MissionVisionSection from './missionvisionobj';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Route path="/events" element={<Navigate to="/home" />} />
         <Route path="/gallery" element={<Navigate to="/home" />} />
       </Routes>
+      <MissionVisionSection />
     </div>
+   
   );
 }
 
