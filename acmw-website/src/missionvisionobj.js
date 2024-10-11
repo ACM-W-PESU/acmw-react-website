@@ -4,7 +4,7 @@ import './missionvisionsection.css';
 const MissionVisionSection = () => {
   return (
     <div className="mission-vision-section">
-     <div className="container">
+      <div className="container">
         <div className="card-container">
           <div className="card">
             <div className="icon-wrapper">
