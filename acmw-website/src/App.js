@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/navbar';
-import About from "./components/about";
+import About from "./pages/about";
 import MissionVisionSection from './missionvisionobj';
+import Events from './pages/events';
 import './App.css';
 
 function App() {
@@ -10,14 +11,13 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<About />} />
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/about" element={<Navigate to="/home" />} />
-        <Route path="/events" element={<Navigate to="/home" />} />
-        <Route path="/gallery" element={<Navigate to="/home" />} />
+        <Route path="/about" element={<MissionVisionSection/>} />
+        <Route path="/events" element={<Events/>} />
+        <Route path="/gallery" element={<Navigate to="/gallery" />} />
+        <Route path="*" element={<h1>404 - Page Not Found</h1>} /> {/* Catch-all route */}
       </Routes>
-      <About />
-      <MissionVisionSection />
     </div>
   );
 }

@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./about.css";
 
 const About = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleReadMoreClick = () => {
+    navigate("/about"); // Navigate to the Mission Vision section
+  };
   return (
     <div className="about-section">
       <h1>ABOUT</h1>
@@ -9,7 +15,7 @@ const About = () => {
         {/* put content here, the button is relative so it will go to the bottom of the page directly after adding the content and spacing */}
         {/* background currently is black */}
       </div>
-      <button className="button">
+      <button className="button" onClick={handleReadMoreClick}>
         Read More
         <svg
           className="icon"
