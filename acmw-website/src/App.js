@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/navbar';
+import About from "./components/about";
 import MissionVisionSection from './missionvisionobj';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/events" element={<Navigate to="/home" />} />
         <Route path="/gallery" element={<Navigate to="/home" />} />
       </Routes>
+      <About />
       <MissionVisionSection />
     </div>
   );
