@@ -1,0 +1,92 @@
+/* Navbar Styling */
+body {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 50px;  /* Reduced padding */
+    gap: 30px;  /* Reduced gap between items */
+    z-index: 1000;
+    width: 100%;
+    height: 50px;  /* Reduced height */
+    background-color: #040127;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Logo Styling */
+.pes-logo {
+    width: 100px;  /* Reduced width */
+    height: auto;
+}
+
+/* Navbar items container */
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;  /* Reduced gap between navbar items */
+}
+
+/* Navbar link styling */
+.nav-links {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;  /* Reduced font size */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center; /* Align icons and text */
+    gap: 5px;  /* Reduced gap between icon and text */
+    letter-spacing: 0.5px;  /* Reduced letter spacing */
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 4px 8px;  /* Reduced padding */
+}
+
+/* Navbar links hover effect */
+.nav-links:hover {
+    color: #9983bd;
+    transform: translateY(-2px);  /* Reduced hover effect */
+}
+
+/* Icon styling */
+.nav-icon {
+    font-size: 18px;  /* Reduced icon size */
+    transition: transform 0.3s ease;
+}
+
+/* Navbar icon hover effect */
+.nav-links:hover .nav-icon {
+    transform: scale(1.1); /* Icon scales slightly on hover */
+}
+
+/* Active link */
+.nav-links.active {
+    color: #ffbb33;
+    font-weight: bolder;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-component {
+        flex-direction: column;
+        padding: 15px 10px;
+        height: auto;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        gap: 10px;  /* Adjusted gap for mobile view */
+    }
+
+    .nav-links {
+        font-size: 14px;  /* Reduced font size for mobile view */
+        text-align: center;
+    }
+}
