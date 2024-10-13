@@ -8,8 +8,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px 100px;
-    gap: 20px; 
+    padding: 15px 50px;
+    gap: 30px; 
     z-index: 1000;
     width: 100%;
     height: 50px;
@@ -38,8 +38,10 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 10px;
+    gap: 20px;
+    overflow: hidden;
     height: 100%; 
+    transition: height 0.3s ease;
 }
 
 .nav-links {
@@ -48,13 +50,29 @@ body {
     font-weight: bolder;
     font-size: 22.5px;
     line-height: 29px;
+    gap:10px;
     display: flex;
     color: #FFFFFF;
+    transition: padding 0.3s ease;
+}
+
+.nav-links:hover {
+    color: #9983bd;
+    transform: translateY(-2px);  
+}
+
+.nav-icon {
+    font-size: 15px; 
+    transition: transform 0.3s ease;
+}
+
+.nav-links:hover .nav-icon {
+    transform: scale(1.1); 
 }
 
 @media (max-width: 768px) {
     .navbar-component {
-        padding: 20px;
+        padding: 15px 5px;
     }
 
     .hamburger {
@@ -62,32 +80,34 @@ body {
     }
 
     .navbar-items {
-        flex-direction: column; 
+        flex-direction: row; 
         width: 100%; 
         align-items: center; 
+        justify-content:center;
         position: absolute; 
-        top: 75px; 
-        left: 0; 
+        top: 55px; 
+        left:0;
         background-color: #040127; 
         display: none; 
         transition: all 0.3s ease;
         z-index: 1000; 
+        gap:5px;
+        font-size:15px;
     }
 
     .navbar-items.open {
         display: flex; 
-        padding: 5px 0; 
-    }
+     }
 
     .nav-links {
-        font-size: 18px; 
-        padding: 1px 0; 
+        font-size: 15px; 
         width: auto; 
         text-align: center; 
+        gap:5px;
     }
 
     .content {
-        margin-top: 350px; 
+        margin-top: 50px; 
         transition: margin-top 0.3s ease; 
     }
 

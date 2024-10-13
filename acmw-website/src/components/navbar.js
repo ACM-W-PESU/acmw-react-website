@@ -41,6 +41,7 @@ class Navbar extends Component {
                   to={item.url}
                   onClick={this.closeMobileMenu} 
                 >
+                  <i className = {`nav-icon ${item.icon}`}></i>
                   {item.title}{' '}
                   {index < navmenuItems.length - 1 && (
                     <span style={{ paddingLeft: '6.5px' }}> | </span>
