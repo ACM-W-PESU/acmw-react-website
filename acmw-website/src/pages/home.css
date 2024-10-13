@@ -1,9 +1,6 @@
-/* Home Page CSS */
-
-/* Main container */
 .home-page {
     position: relative;
-    height: 100vh;
+    height: 85vh;
     overflow: hidden;
 }
 
@@ -27,7 +24,7 @@
 }
 
 /* ACM-W Logo */
-.acm-logo {
+.acm-logo-home {
     width: 100%; /* Make the logo take the full width of its container */
     height: auto; /* Maintain aspect ratio */
     max-height: 300px; /* Set a maximum height to control overflow */
@@ -37,7 +34,7 @@
 }
 
 /* Footer Styling */
-.footer {
+.footer-home {
     background-color: rgba(0, 0, 0, 0.8); /* Black opaque background */
     color: white; /* White text color */
     text-align: center; /* Centered text */

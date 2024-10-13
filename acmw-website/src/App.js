@@ -2,10 +2,10 @@ import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/navbar';
 import ScrollToTop from "./components/ScrollToTop";
+import HomePage from "./pages/home";
 import About from "./pages/about";
 import MissionVisionSection from './pages/missionvisionobj';
 import Events from './pages/events';
-import Footer from './components/footer';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <div className="content">
       <ScrollToTop />
       <Routes>
-        <Route path="/home" element={<About />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/about" element={<About />} />
         <Route path="/missionvisionobj" element={<MissionVisionSection/>} />
@@ -24,7 +24,6 @@ function App() {
         <Route path="*" element={<h1>404 - Page Not Found</h1>} /> {/* Catch-all route */}
       </Routes>
       </div>
-      <Footer/>
     </div>
   );
 }

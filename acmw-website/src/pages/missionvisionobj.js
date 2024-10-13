@@ -32,11 +32,9 @@ const MissionVisionSection = () => {
             </div>
             <h3>Objectives</h3>
             <ul>
-              <li>Organize engaging technical events like hackathons, ideathons, and coding treasure hunts.</li>
+              <li>Organize engaging technical events.</li>
               <li>Work on collaborative projects that solve real-world challenges.</li>
-              <li>Foster continuous learning through workshops and community initiatives.</li>
               <li>Encourage networking and mentorship to strengthen the tech community.</li>
-              <li>Promote an inclusive environment that welcomes all members to contribute.</li>
             </ul>
           </div>
         </div>

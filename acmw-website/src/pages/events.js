@@ -1,8 +1,9 @@
 import React from 'react';
 import './events.css';
-
+import Footer from '../components/footer';
 function EventsPage() {
     return (
+        <div>
         <div className="container">
             <h1 className="events-title">Events</h1>
             <div className="events">
@@ -24,6 +25,8 @@ function EventsPage() {
                     <p>Calling all girls! Get ready to dive into the world of innovation and creativity at Develop for Her! To tackle real-world challenges, collaborate with peers, and network with industry professionals and mentors.</p>
                 </div>
             </div>
+        </div>
+        <Footer/>
         </div>
     );
 }

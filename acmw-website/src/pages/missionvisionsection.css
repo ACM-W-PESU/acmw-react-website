@@ -1,9 +1,8 @@
 .mission-vision-section {
-    width: 100%;
-    min-height: 500px; 
+    width: 100%; 
     background-color: #0d0d4b; 
-    position: relative;
-    overflow: hidden;
+    /* position: relative;
+    overflow: hidden; */
   }
   
   .circuit-pattern {
@@ -20,12 +19,11 @@
   }
   
   .container {
-    position: relative;
+    /* position: relative; */
     z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 150px; 
-    padding-bottom: 64px;
+    padding-top: 100px; 
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -34,7 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 48px;
+    gap: 50px;
   }
   
   .card {
@@ -45,6 +43,7 @@
     max-width: 250px;
     padding: 24px;
     background-color: transparent;
+    margin-bottom: 0;
   }
   
   .icon-wrapper {
@@ -55,7 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     box-shadow: none;
   }
   .icon-wrapper svg {
@@ -73,14 +72,15 @@
   
   p, ul {
     font-size: 1rem;
-    margin-top: 8px;
+    margin-top: 16px;
+    margin-bottom: 8px;
     line-height: 1.6;
   }
 
 
   @media (max-width: 768px) {
     .container {
-      padding-top: 100px; 
+      padding-top: 120px; 
     }
     
     .card {
@@ -88,7 +88,7 @@
     }
     
     .card-container {
-      gap: 32px;
+      gap: 16px;
     }
   }
   .card:hover .icon-wrapper {
