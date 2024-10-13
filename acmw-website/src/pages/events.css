@@ -2,7 +2,6 @@
 .container {
   text-align: center;
   padding: 50px;
-  background-color: #0b2d45;
   min-height: 100vh;
   color: #fff;
 }
@@ -23,7 +22,8 @@
 
 /* Individual event card */
 .event {
-  background-color: #274961;
+  background-color: #d2dfe9;
+  color: black;
   border-radius: 10px;
   padding: 20px;
   width: 300px;
@@ -46,11 +46,11 @@
 .event h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #aad5ff;
+  color: #084e94;
 }
 
 /* Event description */
 .event p {
   font-size: 1rem;
-  color: #d6e8f5;
+  color: #084e94;
 }

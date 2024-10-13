@@ -1,7 +1,7 @@
 .mission-vision-section {
     width: 100%;
     min-height: 500px; 
-    background: #ffffff;
+    background-color: #0d0d4b; 
     position: relative;
     overflow: hidden;
   }
@@ -16,7 +16,7 @@
     position: absolute;
     height: 2px;
     width: 100px;
-    background-color: #e2e8f0;
+    background-color: transparent;
   }
   
   .container {
@@ -44,6 +44,7 @@
     width: 100%;
     max-width: 250px;
     padding: 24px;
+    background-color: transparent;
   }
   
   .icon-wrapper {
@@ -55,16 +56,28 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+  }
+  .icon-wrapper svg {
+    width: 32px; 
+    height: 32px;
+    fill: #000000; 
   }
   
   h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #0f172a;
+    color: #ffffff;
     margin: 0;
   }
   
+  p, ul {
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+
+
   @media (max-width: 768px) {
     .container {
       padding-top: 100px; 
