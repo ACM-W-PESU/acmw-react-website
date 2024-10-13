@@ -1,0 +1,57 @@
+/* Home Page CSS */
+
+/* Main container */
+.home-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire area */
+    z-index: -1; /* Puts the video behind the content */
+}
+
+.logo-container {
+    position: absolute; /* Position the logo relative to the parent */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    z-index: 1; /* Bring the logo above the video */
+    text-align: center; /* Center the logo */
+}
+
+/* ACM-W Logo */
+.acm-logo {
+    width: 100%; /* Make the logo take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a maximum height to control overflow */
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block; /* Ensure margin auto works */
+    transform: scale(3); 
+}
+
+/* Footer Styling */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Black opaque background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around the text */
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+}
+
+/* Tagline Styling */
+p {
+    font-size: 1.8rem;
+    font-style: bold;
+    margin: 0; /* Remove default margin */
+}
+
