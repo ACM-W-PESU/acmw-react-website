@@ -6,6 +6,8 @@ import MissionVisionSection from './missionvisionobj';
 import Events from './pages/events';
 import Footer from './components/footer';
 import './App.css';
+import HomePage from './home';
+
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
       <Navbar />
       <div className="content">
       <Routes>
-        <Route path="/home" element={<About />} />
+        <Route path="/home" element={<HomePage/>} />
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/about" element={<MissionVisionSection/>} />
         <Route path="/events" element={<Events/>} />
