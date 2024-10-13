@@ -8,7 +8,7 @@ import image3 from '../assets/gallery/Screenshot_20241013_143330_Chrome.jpg';
 import image6 from '../assets/gallery/Screenshot_20241013_142338_Chrome.jpg';
 import image4 from '../assets/gallery/Screenshot_20241013_142406_Chrome.jpg';
 import image5 from '../assets/gallery/Screenshot_20241013_142418_Chrome.jpg';
-
+import Footer from '../components/footer';
 class Gallery extends React.Component {
   state = {
     photoIndex: 0,
@@ -41,6 +41,7 @@ class Gallery extends React.Component {
   render() {
     const { photoIndex, isOpen, images } = this.state;
     return (
+      <div>
       <div className="gallery-container" id="gallery">
         <div className="gallery-wrapper">
           {this.renderImages()}
@@ -65,6 +66,8 @@ class Gallery extends React.Component {
             }
           />
         )}
+      </div>
+      <Footer/>
       </div>
     );
   }
