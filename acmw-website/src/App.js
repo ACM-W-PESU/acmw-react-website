@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import About from "./pages/about";
 import MissionVisionSection from './missionvisionobj';
 import Events from './pages/events';
+import Footer from './components/footer';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/gallery" element={<Navigate to="/gallery" />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} /> {/* Catch-all route */}
       </Routes>
+      <Footer/>
     </div>
   );
 }
