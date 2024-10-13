@@ -2,14 +2,14 @@ body {
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-  }
-  
-.navbar-component{
+}
+
+.navbar-component {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Keep items in a row for larger screens */
     align-items: center;
     padding: 20px 100px;
-    gap: 55.33%;
+    gap: 20px; /* Adjust gap for better spacing */
     z-index: 1000;
     width: 100%;
     height: 75px;
@@ -19,28 +19,21 @@ body {
     left: 0;
 }
 
-.pes-logo{
-
-width: 125px;
-height: 55px;
-
+.pes-logo {
+    width: 125px;
+    height: 55px;
 }
 
-.navbar-items{
+.navbar-items {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Keep items in a row for larger screens */
     align-items: center;
     padding: 0px;
     gap: 10px;
-
-    height: 22.56px;
-
+    height: 100%; /* Ensure the navbar items fill the height of the navbar */
 }
 
-.nav-links{
-    width: 74.37px;
-    height: 22.56px;
-
+.nav-links {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: bolder;
@@ -48,5 +41,25 @@ height: 55px;
     line-height: 29px;
     display: flex;
     color: #FFFFFF;
+}
 
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar-component {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-items {
+        flex-direction: column; /* Stack navbar items vertically */
+        width: 100%; /* Make items take full width */
+        align-items: center; /* Center align items */
+    }
+
+    .nav-links {
+        font-size: 18px; /* Adjust font size for better readability */
+        padding: 10px 0; /* Add some padding for better spacing */
+        width: auto; /* Remove fixed width */
+        text-align: center; /* Center align text */
+    }
 }
