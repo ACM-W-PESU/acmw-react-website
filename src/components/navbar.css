@@ -66,12 +66,6 @@ body {
     transform: scale(1.1); /* Icon scales slightly on hover */
 }
 
-/* Active link */
-.nav-links.active {
-    color: #ffbb33;
-    font-weight: bolder;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar-component {
