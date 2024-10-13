@@ -48,10 +48,10 @@
 import React from 'react';
 import './footer.css'; 
 
-import acm_logo from './assests/acm_logo.png';
-import linkedin_logo from './assests/linkedin_logo.png';
-import instagram_logo from './assests/instagram_logo.png';
-import mail_logo from './assests/mail_logo.png';
+import acm_logo from '../assets/acm_logo.png';
+import linkedin_logo from '../assets/linkedin_logo.png';
+import instagram_logo from '../assets/instagram_logo.png';
+import mail_logo from '../assets/mail_logo.png';
 
 const Footer = () => {
   return (

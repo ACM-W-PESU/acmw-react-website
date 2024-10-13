@@ -1,57 +1,56 @@
-/* General styling */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #001f3f; /* Dark blue background */
-    color: white;
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 50px;
-    font-weight: bold;
-  }
-  
-  /* Styling the event cards */
-  .events {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  }
-  
-  .event {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    height: 350px;
-    text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    margin: 10px; /* Add margin to prevent overlap */
-  }
-  
-  .event img {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  .event p {
-    font-size: 1.2rem;
-  }
-  
-  /* Add hover effect */
-  .event:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-    transition: transform 0.3s, background-color 0.3s;
-  }
-  
+/* Container for the entire events page */
+.container {
+  text-align: center;
+  padding: 50px;
+  background-color: #0b2d45;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Title styling */
+.events-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Flexbox for events */
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual event card */
+.event {
+  background-color: #274961;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-10px);
+}
+
+/* Event icon */
+.event-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Event title */
+.event h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #aad5ff;
+}
+
+/* Event description */
+.event p {
+  font-size: 1rem;
+  color: #d6e8f5;
+}

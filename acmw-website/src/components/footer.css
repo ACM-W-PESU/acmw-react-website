@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    padding-bottom: 150px; 
+    padding-bottom: 50px; 
   }
   
   .footer {
     background-color: #0d0d4b; 
     color: white;
-    padding: 40px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     position: fixed; 
@@ -24,7 +24,7 @@ body {
   }
   
   .footer-left img {
-    width: 200px; 
+    width: 150px; 
   }
   
   .footer-center {
@@ -32,8 +32,8 @@ body {
   }
   
   .footer-center h2 {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 16px;
   }
   
   .footer-social {
@@ -43,18 +43,18 @@ body {
   }
   
   .footer-social a {
-    margin: 0 15px; 
+    margin: 0 10px; 
   }
   
   .footer-social img {
-    width: 40px;
+    width: 30px;
   } 
   
   
   .footer-right {
     text-align: right;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 12px;
+    line-height: 1.4;
   }
   
   .footer-right p {

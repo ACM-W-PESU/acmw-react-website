@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="content">
       <Routes>
         <Route path="/home" element={<About />} />
         <Route path="/" element={<Navigate to="/home" />} />
@@ -19,6 +20,7 @@ function App() {
         <Route path="/gallery" element={<Navigate to="/gallery" />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} /> {/* Catch-all route */}
       </Routes>
+      </div>
       <Footer/>
     </div>
   );
