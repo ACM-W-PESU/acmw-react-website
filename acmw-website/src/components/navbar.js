@@ -1,10 +1,22 @@
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { navmenuItems } from "./navmenuitems";
 import "./navbar.css";
-import { Component } from "react";
-import { NavLink } from "react-router-dom";
 import pesLogo from "../assets/pesLogo.png"; 
 
 class Navbar extends Component {
+  state = {
+    isMobileMenuOpen: false, 
+  };
+
+  toggleMobileMenu = () => {
+    this.setState((prevState) => ({ isMobileMenuOpen: !prevState.isMobileMenuOpen }));
+  };
+
+  closeMobileMenu = () => {
+    this.setState({ isMobileMenuOpen: false });
+  };
+
   render() {
     return (
       <div className="navbar-component">
@@ -12,7 +24,12 @@ class Navbar extends Component {
           <img className="pes-logo" alt="pes-university-logo" src={pesLogo} />
         </div>
 
-        <div className="navbar-items">
+        {/* Hamburger Menu Button for Mobile Devices */}
+        <div className="hamburger" onClick={this.toggleMobileMenu}>
+          &#9776; {/* Unicode for hamburger icon */}
+        </div>
+
+        <div className={`navbar-items ${this.state.isMobileMenuOpen ? 'open' : ''}`}>
           {navmenuItems.map((item, index) => {
             return (
               <div key={index}>
@@ -22,6 +39,7 @@ class Navbar extends Component {
                   }
                   style={{ textDecoration: 'none' }}
                   to={item.url}
+                  onClick={this.closeMobileMenu} 
                 >
                   {item.title}{' '}
                   {index < navmenuItems.length - 1 && (

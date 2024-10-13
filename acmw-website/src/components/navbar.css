@@ -6,17 +6,26 @@ body {
 
 .navbar-component {
     display: flex;
-    flex-direction: row; /* Keep items in a row for larger screens */
+    flex-direction: row;
     align-items: center;
     padding: 20px 100px;
-    gap: 20px; /* Adjust gap for better spacing */
+    gap: 20px; 
     z-index: 1000;
     width: 100%;
-    height: 75px;
+    height: 50px;
     background-color: #040127;
     position: fixed; 
     top: 0;
     left: 0;
+}
+
+.hamburger {
+    display: none; 
+    font-size: 28px; 
+    color: #FFFFFF; 
+    cursor: pointer; 
+    margin-left: auto; 
+    padding-right:35px;
 }
 
 .pes-logo {
@@ -26,11 +35,11 @@ body {
 
 .navbar-items {
     display: flex;
-    flex-direction: row; /* Keep items in a row for larger screens */
+    flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 10px;
-    height: 100%; /* Ensure the navbar items fill the height of the navbar */
+    height: 100%; 
 }
 
 .nav-links {
@@ -43,23 +52,46 @@ body {
     color: #FFFFFF;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .navbar-component {
-        flex-direction: column; /* Stack items vertically on small screens */
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: block; 
     }
 
     .navbar-items {
-        flex-direction: column; /* Stack navbar items vertically */
-        width: 100%; /* Make items take full width */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        width: 100%; 
+        align-items: center; 
+        position: absolute; 
+        top: 75px; 
+        left: 0; 
+        background-color: #040127; 
+        display: none; 
+        transition: all 0.3s ease;
+        z-index: 1000; 
+    }
+
+    .navbar-items.open {
+        display: flex; 
+        padding: 5px 0; 
     }
 
     .nav-links {
-        font-size: 18px; /* Adjust font size for better readability */
-        padding: 10px 0; /* Add some padding for better spacing */
-        width: auto; /* Remove fixed width */
-        text-align: center; /* Center align text */
+        font-size: 18px; 
+        padding: 1px 0; 
+        width: auto; 
+        text-align: center; 
+    }
+
+    .content {
+        margin-top: 350px; 
+        transition: margin-top 0.3s ease; 
+    }
+
+    .navbar-items.open + .content {
+        margin-top: 250px; 
     }
 }
