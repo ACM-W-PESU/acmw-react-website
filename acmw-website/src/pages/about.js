@@ -4,12 +4,12 @@ import "./about.css";
 import Footer from '../components/footer';
 const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top when the component mounts
+    window.scrollTo(0, 0); 
   }, []);
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const handleReadMoreClick = () => {
-    navigate("/missionvisionobj"); // Navigate to the Mission Vision section
+    navigate("/missionvisionobj"); 
   };
   return (
     <div>

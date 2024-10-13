@@ -1,4 +1,3 @@
-/* Container for the entire events page */
 .container {
   text-align: center;
   padding: 50px;
@@ -7,21 +6,18 @@
   padding-bottom: 50px;
 }
 
-/* Title styling */
 .events-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
   font-weight: bold;
 }
 
-/* Flexbox for events */
 .events {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-/* Individual event card */
 .event {
   background-color: #9fb3c2;
   color: #0d0d4b;
@@ -37,20 +33,17 @@
   transform: translateY(-10px);
 }
 
-/* Event icon */
 .event-icon {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-/* Event title */
 .event h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #0d0d4b;
 }
 
-/* Event description */
 .event p {
   font-size: 1rem;
   color: #0d0d4b;

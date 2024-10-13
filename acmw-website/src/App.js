@@ -6,8 +6,8 @@ import HomePage from "./pages/home";
 import About from "./pages/about";
 import MissionVisionSection from './pages/missionvisionobj';
 import Events from './pages/events';
+import Gallery from "./pages/gallery";
 import './App.css';
-import Gallery from './pages/gallery';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/missionvisionobj" element={<MissionVisionSection/>} />
         <Route path="/events" element={<Events/>} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery/>} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} /> {/* Catch-all route */}
       </Routes>
       </div>
